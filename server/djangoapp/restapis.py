@@ -117,8 +117,8 @@ def get_dealer_reviews_from_cf(url, **kwargs):
             if "car_year" in dealer_review:
                 review_obj.car_year = dealer_review["car_year"]
             
-            sentiment = analyze_review_sentiments(review_obj.review)
-            review_obj.sentiment = sentiment
+           # sentiment = analyze_review_sentiments(review_obj.review)
+           # review_obj.sentiment = sentiment
             results.append(review_obj)
 
     return results
